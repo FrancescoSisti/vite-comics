@@ -21,13 +21,9 @@ export default {
 </script>
 
 <template>
-    <div class="container img-fluid">
-        <img src="../assets/img/jumbotron.jpg" class="h-100" alt="jumbotron">
+    <div class="jumbotron">
     </div>
-
-
-
-    <div class="comics-section">
+    <div class="comics-section d-flex flex-column justify-content-center align-items-center">
         <div class="comics container">
             <div 
                 v-for="comic in comics" 
@@ -44,6 +40,7 @@ export default {
                 </div>
             </div>
         </div>
+        <button type="button" class="btn btn-primary my-5">Load more</button>
     </div>
 </template>
 
@@ -67,6 +64,7 @@ export default {
 
 .comic-card {
     background-color: #ffffff;
+    height: 350px;
     border-radius: 20px;
     width: 240px;
     text-align: center;
@@ -133,6 +131,20 @@ h5 {
     color: #333; /* Darker color for headings */
     letter-spacing: 0.5px;
     text-transform: uppercase; /* Series name in uppercase */
+}
+
+.jumbotron {
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 </style>
