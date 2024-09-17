@@ -10,34 +10,33 @@ export default {
 
 <template>
     <header class="app-header">
-        <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="DC Logo">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="DC Logo">
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Comics</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Collectibles</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Fans</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Collectibles</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Fans</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Shop</a></li>
-            </ul>
-        </nav>
     </header>
 </template>
 
 <style scoped lang="scss">
-@use '../../styles/general.scss'as vars;
+@use '../../styles/variables'as vars;
 
 .app-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1e1e1e; 
+    background-color: white; 
     padding: 20px 40px; 
     color: vars.$header-color;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -59,7 +58,7 @@ export default {
         padding: 0;
 
         li a {
-            color: white; 
+            color: vars.$header-color;
             text-decoration: none;
             font-weight: bold;
             position: relative; 

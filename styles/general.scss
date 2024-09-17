@@ -1,5 +1,5 @@
 @use './styles/variables' as vars;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap');
+@use 'bootstrap/scss/bootstrap';
 
 * {
     margin: 0;
