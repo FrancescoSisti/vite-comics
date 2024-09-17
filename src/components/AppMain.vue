@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            count: 0
+            name: 'AppMain',
         }
     }
 }
